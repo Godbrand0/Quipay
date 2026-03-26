@@ -14,9 +14,17 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { to: "/dashboard", label: t("nav.dashboard"), shortcut: "Ctrl+D" },
     { to: "/payroll", label: t("nav.payroll") },
-    { to: "/treasury-management", label: t("nav.treasury") },
+    {
+      to: "/treasury-management",
+      label: t("nav.treasury"),
+      tourId: "tour-treasury-nav",
+    },
     { to: "/worker", label: t("nav.worker") },
-    { to: "/workforce", label: t("nav.workforce") },
+    {
+      to: "/workforce",
+      label: t("nav.workforce"),
+      tourId: "tour-workforce-nav",
+    },
     { to: "/reports", label: t("nav.reports") },
     { to: "/templates", label: "Templates" },
     { to: "/governance", label: t("nav.governance") },
@@ -29,6 +37,7 @@ const Navbar: React.FC = () => {
       to: "/create-stream",
       label: t("nav.create_stream") || "New Stream",
       shortcut: "Ctrl+N",
+      tourId: "tour-create-stream-nav",
     },
     {
       to: "/settings",
@@ -83,6 +92,7 @@ const Navbar: React.FC = () => {
                 <Tooltip key={link.to}>
                   <TooltipTrigger>
                     <NavLink
+                      id={link.tourId}
                       to={link.to}
                       onClick={closeMenu}
                       className={({ isActive }) =>
