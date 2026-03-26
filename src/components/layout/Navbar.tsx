@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
             <div className="hidden md:flex items-center gap-1">
               {navLinks.map((link) => (
                 <Tooltip key={link.to}>
-                  <TooltipTrigger asChild>
+                  <TooltipTrigger>
                     <NavLink
                       to={link.to}
                       onClick={closeMenu}
