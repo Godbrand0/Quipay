@@ -23,7 +23,10 @@ const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
     {
       title: t("shortcuts.navigation_group") || "Navigation",
       shortcuts: [
-        { key: "Ctrl + D", label: t("shortcuts.dashboard") || "Go to Dashboard" },
+        {
+          key: "Ctrl + D",
+          label: t("shortcuts.dashboard") || "Go to Dashboard",
+        },
         { key: "Ctrl + N", label: t("shortcuts.new_stream") || "New Stream" },
         { key: "Ctrl + W", label: t("shortcuts.withdraw") || "Withdraw" },
         { key: "Ctrl + ,", label: t("shortcuts.settings") || "Settings" },
@@ -32,7 +35,10 @@ const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
     {
       title: t("shortcuts.general_group") || "General",
       shortcuts: [
-        { key: "Ctrl + /", label: t("shortcuts.show_help") || "Show shortcuts" },
+        {
+          key: "Ctrl + /",
+          label: t("shortcuts.show_help") || "Show shortcuts",
+        },
         { key: "Esc", label: t("common.close") || "Close" },
       ],
     },

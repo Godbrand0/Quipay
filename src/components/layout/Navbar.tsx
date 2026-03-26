@@ -19,9 +19,21 @@ const Navbar: React.FC = () => {
     { to: "/workforce", label: t("nav.workforce") },
     { to: "/reports", label: t("nav.reports") },
     { to: "/governance", label: t("nav.governance") },
-    { to: "/withdraw", label: t("nav.withdraw") || "Withdraw", shortcut: "Ctrl+W" },
-    { to: "/create-stream", label: t("nav.create_stream") || "New Stream", shortcut: "Ctrl+N" },
-    { to: "/settings", label: t("nav.settings") || "Settings", shortcut: "Ctrl+," },
+    {
+      to: "/withdraw",
+      label: t("nav.withdraw") || "Withdraw",
+      shortcut: "Ctrl+W",
+    },
+    {
+      to: "/create-stream",
+      label: t("nav.create_stream") || "New Stream",
+      shortcut: "Ctrl+N",
+    },
+    {
+      to: "/settings",
+      label: t("nav.settings") || "Settings",
+      shortcut: "Ctrl+,",
+    },
   ];
 
   const closeMenu = () => setIsMenuOpen(false);
