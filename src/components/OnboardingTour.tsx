@@ -46,7 +46,14 @@ function StepContent({ index }: { index: number }) {
       >
         {heading}
       </h3>
-      <p style={{ margin: 0, fontSize: "0.875rem", lineHeight: 1.6, opacity: 0.85 }}>
+      <p
+        style={{
+          margin: 0,
+          fontSize: "0.875rem",
+          lineHeight: 1.6,
+          opacity: 0.85,
+        }}
+      >
         {body}
       </p>
     </div>
